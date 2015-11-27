@@ -23,6 +23,16 @@ h1, h2, h3 {
   display: none;
 }*/
 /*@media (min-width: 768px) {*/
+.rz-bubble {
+  display:none;
+}
+
+.error, .msgErro{
+  color: red;
+  font-style: italic;
+  font-size: small;
+}
+
   .sidebar {
     height: 768px;
     top: 0px;
