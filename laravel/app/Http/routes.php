@@ -20,3 +20,6 @@ Route::get('/game', function () {
     return view('game');
 });
 
+Route::get('/gameLobby', function () {
+    return view('gameLobby');
+});

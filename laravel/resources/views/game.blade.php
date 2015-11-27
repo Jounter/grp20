@@ -85,7 +85,6 @@
  				<tbody>
  				</table>
  			</div>
-	/*SDASDSA*/
  			<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
  			<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
  			<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
