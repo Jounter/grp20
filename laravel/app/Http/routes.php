@@ -23,3 +23,7 @@ Route::get('/game', function () {
 Route::get('/gameLobby', function () {
     return view('gameLobby');
 });
+
+Route::get('/login', 'LoginRegisterController@loginRegister');
+
+	
