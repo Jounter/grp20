@@ -18,3 +18,4 @@ laravel/adminer/index.php
 .vagrant/machines/default/virtualbox/action_set_name
 .vagrant/machines/default/virtualbox/action_provision
 laravel/.env.old
+.idea/workspace.xml
