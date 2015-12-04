@@ -16,9 +16,25 @@
     <rzslider rz-slider-model="ngDialogData.columnSlider.value"  rz-slider-options="ngDialogData.columnSlider.options" rz-slider-hide-limit-labels="true"></rzslider>
     <span class="error" id="ngDialogData.msgError_Cols">{{ngDialogData.msgErrorCols}}</span>
 </div>
-    <span>Nº Players: {{ngDialogData.players}}</span>
+<label>Nº Players: {{ngDialogData.players}}</label>
+<input type="number" name = "nrPlayer">
+<br>
+<label>Game Visibility:</label>
 
-<rzslider rz-slider-model= "ngDialogData.players" ng-show=" ngDialogData.linesSlider.value > 0 && ngDialogData.columnSlider.value > 0" rz-slider-high="(ngDialogData.linesSlider.value*ngDialogData.columnSlider.value)/2" rz-slider-options="showTicks" rz-slider-hide-limit-labels="true"></rzslider>
-
+<br>
+<form>
+    <input type="radio" name="visibility" value="private" ng-show=''> Private
+    <br>
+        <div ng-show='private'>
+            <label>Token: </label>
+            <input type="text" name="token" disabled>
+            <button type="button">Copy</button>
+        </div>
+    <input type="radio" name="visibility" value="public"> Public
+</form>
+<br>
+<form action="">
+    <input type="checkbox" name="bots" value="Bots">Play with Bots?
+</form>
 </body>
 </html>
