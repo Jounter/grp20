@@ -13,7 +13,8 @@ class Authenticate
      * @var Guard
      */
     protected $auth;
-
+    protected $loginPath = '/login';
+    protected $redirectPath = '/gameLobby';
     /**
      * Create a new filter instance.
      *
