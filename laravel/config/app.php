@@ -136,6 +136,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
        // Collective\Html\HtmlServiceProvider::class,
         /*
          * Application Service Providers...
@@ -193,9 +195,8 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
-       // 'Form'      => Collective\Html\FormFacade::class,
-       // 'HTML'      => Collective\Html\HtlmFacade::class,
-
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'Socialize' => Laravel\Socialite\Facades\Socialite::class,
     ],
 
 ];

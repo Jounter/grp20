@@ -9,7 +9,9 @@ use Illuminate\Foundation\Auth\Access\Authorizable;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\Access\Authorizable as AuthorizableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
-use Hash;
+use Illuminate\Support\Facades\Hash as Hash;
+use Illuminate\Support\Facades\Sessionsion as Session;
+use App\Player;
 
 class User extends Model implements AuthenticatableContract,
                                     AuthorizableContract,
@@ -61,4 +63,8 @@ class User extends Model implements AuthenticatableContract,
         }
 
     }
+    public function games(){
+        return $this->belongsToMany('App\Game', 'game_player')->withPivot(['numberPairs','timePlaying'])->withTimestamps();
+    }
+
 }

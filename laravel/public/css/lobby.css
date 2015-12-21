@@ -33,6 +33,17 @@ h1, h2, h3 {
   font-size: small;
 }
 
+/*remover spinners dos type=numbers*//*
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-moz-inner-spin-button,input[type=number]::-moz-outer-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
   .sidebar {
     height: 768px;
     top: 0px;
@@ -58,4 +69,8 @@ h1, h2, h3 {
 
 #mainArea{
   height: 768px;
+}
+
+#btnsCreateRoom{
+ text-align:center;
 }
